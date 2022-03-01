@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 180px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 30px;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+.row_posterLarger{
+    max-height: 300px;
+}
+
+.row_posterLarger:hover {
+    transform: scale(1.09);
+}
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+/*---------------------------------------------*/
+.banner {
+    padding-top: 50px;
+    background-image: url(../Netflix/Img/figmabanner.png);
+    background-size:  cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 680px;
+}
+.banner_contents {
+    margin-left: 30px;
+    padding-top: 310px;
+    height: 190px;
+}
+.banner_title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.9rem;
+}
+.banner_description {
+    width: 50rem;
+    line-height: 1.3;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+    max-width: 400px;
+    height: 190px;
+}
+.banner_button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(43, 40, 40, 0.5);
+}
+
+.banner_button:hover {
+    color: #000;
+    background-color: white;
+    transition: all 0.2s;
+}
+.banner .banner--fadeBottom {
+    padding-bottom: 40%;
+    height: 8.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(134, 131, 131, 0.61),rgb(0, 0, 0));
+}
+
+.nav_logo {
+    width: 100px;
+    object-fit: contain;
+
+}
+.nav_parasita{
+    width: 35px;
+    object-fit: contain;
+    float: right;
+}
+
+.nav li{
+    display: flex;
+    padding-right: 740px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+
+.nav li:hover{
+    color: #000;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+.nav_black {
+    background-color: #111;
+}
